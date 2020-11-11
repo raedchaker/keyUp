@@ -1,0 +1,5 @@
+<ol class="list-group">
+    <li class="list-group-item" *ngFor="let p of personnes">
+        <app-item [personne]="p" (sendPerson)="sendPerson($event)"></app-item>
+    </li>
+</ol>

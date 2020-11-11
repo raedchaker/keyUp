@@ -7,12 +7,22 @@ import { ExergueDirective } from './_directive/exergue.directive';
 import { ContentComponent } from './content/content/content.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ImagePipe } from './pipes/image-pipe.pipe';
+import { ListComponent } from './components/list/list.component';
+import { DetailComponent } from './components/detail/detail.component';
+import { ItemComponent } from './components/item/item.component';
+import { CvComponent } from './components/cv/cv.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExergueDirective,
-    ContentComponent
+    ContentComponent,
+    ImagePipe,
+    ListComponent,
+    DetailComponent,
+    ItemComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
