@@ -1,5 +1,5 @@
+import { TodoService } from './../../_service/todo.service';
 import { Component, OnInit } from '@angular/core';
-import { v4 as uuidv4 } from 'uuid';
 import { Todo } from '../todo';
 
 @Component({
@@ -11,9 +11,10 @@ export class TodoComponent implements OnInit {
   name: string='';
   content: string='';
   todoList: Todo[] = [];
-  constructor() { }
+  constructor(private todoService: TodoService) { }
 
   ngOnInit(): void {
+    this.todoList = this.todoService.getAllTodo();
   }
   addBtnDisabled(): boolean{
     if(this.name.length==0 || this.content.length==0)
@@ -22,13 +23,12 @@ export class TodoComponent implements OnInit {
   }
 
   addTodo(){
-    this.todoList.push(new Todo(uuidv4(), this.name, this.content));
-    console.log(this.todoList);
+    this.todoList = this.todoService.addTodo(this.name, this.content);
     this.name = '';
     this.content = '';
   }
   delete(id){
-    this.todoList = this.todoList.filter(t=> t.id !== id);
+    this.todoList = this.todoService.delete(id);
   }
 
 }
