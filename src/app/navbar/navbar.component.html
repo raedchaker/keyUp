@@ -1,0 +1,20 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink=''>Angular</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li ngClass="{nav-item: true, active: 'todo'===path}">
+          <a class="nav-link" routerLink='todo' (click)="getPath()">Todo</a>
+        </li>
+        <li ngClass="{nav-item: true, active: 'directive-exercice'===path}">
+          <a class="nav-link" routerLink='directive-exercice' (click)="getPath()">directive</a>
+        </li>
+        <li ngClass="{nav-item: true, active: cv===path}">
+          <a class="nav-link" routerLink='cv' (click)="getPath()">pipe with cv</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

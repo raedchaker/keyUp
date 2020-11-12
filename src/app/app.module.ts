@@ -12,6 +12,9 @@ import { ListComponent } from './components/list/list.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { ItemComponent } from './components/item/item.component';
 import { CvComponent } from './components/cv/cv.component';
+import { TodoComponent } from './todo/todo/todo.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CvComponent } from './components/cv/cv.component';
     ListComponent,
     DetailComponent,
     ItemComponent,
-    CvComponent
+    CvComponent,
+    TodoComponent,
+    HomeComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
