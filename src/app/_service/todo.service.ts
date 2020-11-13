@@ -12,6 +12,10 @@ export class TodoService {
 
   constructor() { }
 
+  logTodo(todo: Todo){
+    console.log(todo.name +' : '+todo.content);
+  }
+
   getAllTodo(): Todo[]{
     return this.todoList;
   }
