@@ -11,10 +11,15 @@ export class PersonnesService {
     new Personne(2,'name3','firstname3','job3','33333333',23),
     new Personne(3,'name4','firstname4','job4','44444444',24,'              ')
   ];
+  hiredPersons: Personne[]=[];
   constructor() { }
 
   getAllPersons(): Personne[] {
     return this.p;
+  }
+
+  getPersonById(id:number): Personne{
+    return this.p.find(p=> p.id == id);
   }
 
 }

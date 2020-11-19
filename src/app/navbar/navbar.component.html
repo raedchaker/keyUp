@@ -6,14 +6,15 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li ngClass="{nav-item: true, active: 'todo'===path}">
-          <a class="nav-link" routerLink='todo' (click)="getPath()">Todo</a>
+        <li ngClass="{nav-item: true}">
+          <a class="nav-link" routerLink='todo' routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Todo</a>
         </li>
-        <li ngClass="{nav-item: true, active: 'directive-exercice'===path}">
-          <a class="nav-link" routerLink='directive-exercice' (click)="getPath()">directive</a>
+        <li ngClass="{nav-item: true}">
+          <a class="nav-link" routerLink='directive-exercice' >directive</a>
         </li>
-        <li ngClass="{nav-item: true, active: cv===path}">
-          <a class="nav-link" routerLink='cv' (click)="getPath()">pipe with cv</a>
+        <li ngClass="{nav-item: true}">
+          <a class="nav-link" routerLink='cv'>pipe with cv</a>
         </li>
       </ul>
     </div>

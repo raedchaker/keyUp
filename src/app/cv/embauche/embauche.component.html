@@ -1,0 +1,4 @@
+<div class="container" *ngIf="PersonnesEmbauches.length>0">
+    <h1>Liste des CVs sélectionnées pour embauche </h1>
+<app-item *ngFor="let p of PersonnesEmbauches" [personne]="p"></app-item>
+</div>

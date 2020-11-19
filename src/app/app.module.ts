@@ -8,13 +8,14 @@ import { ContentComponent } from './content/content/content.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ImagePipe } from './pipes/image-pipe.pipe';
-import { ListComponent } from './components/list/list.component';
-import { DetailComponent } from './components/detail/detail.component';
-import { ItemComponent } from './components/item/item.component';
-import { CvComponent } from './components/cv/cv.component';
+import { ListComponent } from './cv/list/list.component';
+import { DetailComponent } from './cv/detail/detail.component';
+import { ItemComponent } from './cv/item/item.component';
+import { CvComponent } from './cv/cv/cv.component';
 import { TodoComponent } from './todo/todo/todo.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EmbaucheComponent } from './cv/embauche/embauche.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CvComponent,
     TodoComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    EmbaucheComponent
   ],
   imports: [
     BrowserModule,

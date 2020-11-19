@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-4">
+        <app-list (forward)="getPerson($event)"></app-list>
+    </div>
+    <div class="col-8">
+        <app-detail [personne]="p" (embauche)="reloadEmbauche()"></app-detail>
+    </div>
+</div>
+<div class="row">
+    <app-embauche [PersonnesEmbauches]="PersonnesEmbauches"></app-embauche>
+</div>

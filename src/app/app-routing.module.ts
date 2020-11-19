@@ -3,7 +3,7 @@ import { TodoComponent } from './todo/todo/todo.component';
 import { ContentComponent } from './content/content/content.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { CvComponent } from './components/cv/cv.component';
+import { CvComponent } from './cv/cv/cv.component';
 
 const routes: Routes = [
   {
